@@ -9,14 +9,17 @@ The one problem quite many of my non-geek contacts have is what is the differenc
 
 ## Making things work
 In Ubuntu Precise Pangolin (12.04) you install python3 and BeautifulSoup4 like so:
+
     sudo apt-get install python3 python3-bs4
 
 Then get the current version of the code either via Git (if you know Git, you'll know your way around) or in a terminal window:
+
     wget https://raw.github.com/jazzer/get-dropbox-gallery/master/get-dropbox-gallery.py
     chmod +x get-dropbox-gallery.py
 
 
 If you have a gallery link, you can save the images contained in the gallery by issuing this command:
+
     ./get-dropbox-gallery.py -l https://www.dropbox.com/sh/9ilicasuj/0lpasdbZWlX#/ -o testfolder
 
 The folder will be created for you if it does not exist yet.
